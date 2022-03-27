@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="page1.css">
+    <title>Frontend_project_1</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">
+                Text can be edited..
+            </h2>
+            <div class="toggle">
+            </div>
+        </header>
+        <video src="pexels-kindel-media-9701049.mp4" muted loop autoplay></video>
+        <div class="overlay">
+
+        </div>
+        <div class="text">
+            <h2>This is heading</h2>
+            <h3>H3 type of heading</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quisquam cum nesciunt odit. Atque, architecto hic cum a neque aspernatur.
+            </p>
+            <a href="#">Explore More</a>
+        </div>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/" target="_blank">
+                    <img src="facebook.png" alt="Click here">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="instagram.png" alt="Here">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target ="_blank">
+                    <img src= "twitter.png" alt="Here">
+                </a>
+            </li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
